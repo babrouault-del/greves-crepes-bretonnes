@@ -1,11 +1,10 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import exteriorImage from "@/assets/creperie-exterior.png";
-import interiorImage from "@/assets/interior.jpg";
-import galetteImage from "@/assets/galette-complete.jpg";
+import interiorImage from "@/assets/interieur.png";
+import galetteImage from "@/assets/galette-complete-burrata.png";
 import crepeImage from "@/assets/crepe-caramel.jpg";
-import cidreImage from "@/assets/cidre-breton.jpg";
-import heroImage from "@/assets/hero-crepes.jpg";
+import cidreImage from "@/assets/cidre-artisanal.png";
 import galetteCaramelChantilly from "@/assets/galette-caramel-chantilly.jpg";
 import galetteSaumon from "@/assets/galette-saumon.jpg";
 import dessertsAssortis from "@/assets/desserts-assortis.jpg";
@@ -63,11 +62,6 @@ const galleryImages = [
     alt: "Sélection de cidres bretons artisanaux",
     category: "Boissons",
   },
-  {
-    src: heroImage,
-    alt: "Assortiment de galettes et crêpes sur ardoise",
-    category: "Spécialités",
-  },
 ];
 
 const Galerie = () => {
@@ -106,14 +100,6 @@ const Galerie = () => {
                       alt={image.alt}
                       className="w-full h-full object-cover group-hover:scale-110 transition-smooth"
                     />
-                  </div>
-                  <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-foreground/20 to-transparent opacity-0 group-hover:opacity-100 transition-smooth">
-                    <div className="absolute bottom-0 left-0 right-0 p-6 text-primary-foreground">
-                      <span className="inline-block px-3 py-1 bg-primary rounded-full text-sm font-medium mb-2">
-                        {image.category}
-                      </span>
-                      <p className="text-sm">{image.alt}</p>
-                    </div>
                   </div>
                 </div>
               ))}

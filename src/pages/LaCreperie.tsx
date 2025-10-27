@@ -2,7 +2,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Utensils, Heart, Users, Award } from "lucide-react";
 import exteriorImage from "@/assets/creperie-exterior.png";
-import interiorImage from "@/assets/interior.jpg";
+import interiorImage from "@/assets/interieur.png";
 
 const values = [
   {
@@ -93,30 +93,36 @@ const LaCreperie = () => {
         <section className="py-20 bg-gradient-subtle">
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4 font-playfair">
-                Nos Valeurs
-              </h2>
-              <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              <span className="inline-block text-xs tracking-widest uppercase text-primary/80 mb-3">Nos Valeurs</span>
+              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-3 font-playfair">
                 Ce qui fait l'âme de notre crêperie
+              </h2>
+              <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto text-balance">
+                Des engagements simples et authentiques qui guident notre quotidien.
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 max-w-6xl mx-auto">
               {values.map((value, index) => {
                 const Icon = value.icon;
                 return (
                   <div
                     key={value.title}
-                    className="bg-card p-6 rounded-lg shadow-soft hover:shadow-warm transition-smooth text-center animate-slide-up"
+                    className="relative overflow-hidden rounded-xl bg-card/90 backdrop-blur-sm border border-border shadow-soft hover:shadow-warm transition-smooth animate-slide-up"
                     style={{ animationDelay: `${index * 100}ms` }}
                   >
-                    <div className="inline-flex items-center justify-center w-16 h-16 bg-primary/10 rounded-full mb-4">
-                      <Icon className="h-8 w-8 text-primary" />
+                    <div className="absolute inset-0 pointer-events-none" aria-hidden="true" />
+                    <div className="p-6 md:p-7 text-center">
+                      <div className="mx-auto mb-4 inline-flex items-center justify-center w-16 h-16 rounded-full bg-primary/10 ring-1 ring-primary/20">
+                        <Icon className="h-8 w-8 text-primary" />
+                      </div>
+                      <h3 className="text-lg md:text-xl font-bold text-foreground mb-2 font-playfair">
+                        {value.title}
+                      </h3>
+                      <p className="text-sm md:text-[15px] leading-relaxed text-muted-foreground">
+                        {value.description}
+                      </p>
                     </div>
-                    <h3 className="text-xl font-bold text-foreground mb-2 font-playfair">
-                      {value.title}
-                    </h3>
-                    <p className="text-sm text-muted-foreground">{value.description}</p>
                   </div>
                 );
               })}
