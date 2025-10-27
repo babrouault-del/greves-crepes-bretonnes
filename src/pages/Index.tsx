@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import AboutSection from "@/components/AboutSection";
 import SpecialtiesSection from "@/components/SpecialtiesSection";
-import ReservationCTA from "@/components/ReservationCTA";
+import ContactInfo from "@/components/ContactInfo";
 import { Helmet } from "react-helmet";
 
 const Index = () => {
@@ -43,7 +43,7 @@ const Index = () => {
         <Hero />
         <AboutSection />
         <SpecialtiesSection />
-        <ReservationCTA />
+        <ContactInfo />
       </main>
       <Footer />
     </>

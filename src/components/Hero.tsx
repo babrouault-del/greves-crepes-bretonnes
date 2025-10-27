@@ -41,8 +41,8 @@ const Hero = () => {
               size="lg"
               className="bg-card text-foreground hover:bg-card/90 shadow-warm text-base"
             >
-              <Link to="/menu">
-                Découvrir le menu
+              <Link to="/galerie">
+                Voir nos spécialités
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
             </Button>
@@ -52,7 +52,7 @@ const Hero = () => {
               variant="outline"
               className="border-2 border-card text-card bg-transparent hover:bg-card hover:text-foreground text-base"
             >
-              <Link to="/contact">Réserver une table</Link>
+              <Link to="/contact">Nous contacter</Link>
             </Button>
           </div>
         </div>

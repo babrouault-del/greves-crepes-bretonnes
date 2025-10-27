@@ -10,7 +10,6 @@ const Header = () => {
   const navigation = [
     { name: "Accueil", href: "/" },
     { name: "La Crêperie", href: "/la-creperie" },
-    { name: "Menu", href: "/menu" },
     { name: "Galerie", href: "/galerie" },
     { name: "Avis", href: "/avis" },
     { name: "Contact", href: "/contact" },
@@ -54,7 +53,7 @@ const Header = () => {
             <Button asChild className="bg-primary hover:bg-primary/90 shadow-warm">
               <Link to="/contact">
                 <Phone className="mr-2 h-4 w-4" />
-                Réserver
+                Contact
               </Link>
             </Button>
           </div>
@@ -89,7 +88,7 @@ const Header = () => {
               <Button asChild className="w-full bg-primary hover:bg-primary/90">
                 <Link to="/contact" onClick={() => setIsMenuOpen(false)}>
                   <Phone className="mr-2 h-4 w-4" />
-                  Réserver une table
+                  Contact
                 </Link>
               </Button>
             </div>

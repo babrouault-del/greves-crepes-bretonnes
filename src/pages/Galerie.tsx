@@ -6,6 +6,11 @@ import galetteImage from "@/assets/galette-complete.jpg";
 import crepeImage from "@/assets/crepe-caramel.jpg";
 import cidreImage from "@/assets/cidre-breton.jpg";
 import heroImage from "@/assets/hero-crepes.jpg";
+import galetteCaramelChantilly from "@/assets/galette-caramel-chantilly.jpg";
+import galetteSaumon from "@/assets/galette-saumon.jpg";
+import dessertsAssortis from "@/assets/desserts-assortis.jpg";
+import galetteFromage from "@/assets/galette-fromage.jpg";
+import crepeChocolat from "@/assets/crepe-chocolat.jpg";
 
 const galleryImages = [
   {
@@ -24,9 +29,34 @@ const galleryImages = [
     category: "Galettes",
   },
   {
+    src: galetteCaramelChantilly,
+    alt: "Galette sucrée au caramel avec chantilly maison",
+    category: "Galettes",
+  },
+  {
+    src: galetteSaumon,
+    alt: "Galette au saumon fumé et œufs",
+    category: "Galettes",
+  },
+  {
+    src: galetteFromage,
+    alt: "Galette burger au fromage fondant",
+    category: "Galettes",
+  },
+  {
     src: crepeImage,
     alt: "Crêpe au caramel beurre salé maison",
     category: "Crêpes",
+  },
+  {
+    src: crepeChocolat,
+    alt: "Crêpe au chocolat généreusement garnie",
+    category: "Crêpes",
+  },
+  {
+    src: dessertsAssortis,
+    alt: "Assortiment de desserts bretons maison",
+    category: "Desserts",
   },
   {
     src: cidreImage,
@@ -107,13 +137,7 @@ const Galerie = () => {
                   href="/contact"
                   className="inline-flex items-center justify-center px-6 py-3 bg-primary text-primary-foreground rounded-md hover:bg-primary/90 transition-smooth shadow-warm font-medium"
                 >
-                  Réserver une table
-                </a>
-                <a
-                  href="/menu"
-                  className="inline-flex items-center justify-center px-6 py-3 border-2 border-primary text-primary rounded-md hover:bg-primary hover:text-primary-foreground transition-smooth font-medium"
-                >
-                  Voir le menu
+                  Nous contacter
                 </a>
               </div>
             </div>
